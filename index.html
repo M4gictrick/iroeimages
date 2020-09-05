@@ -1,29 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+{% load static %}
 <head>
     <meta charset="UTF-8">
     <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href='static/css/style.css'>
-    <script src="static/js/script.js" type="text/javascript" defer></script>
+    <link rel="stylesheet" type="text/css" href='{% static "/css/style.css" %}'>
+    <script src="{% static 'js/script.js' %}" type="text/javascript" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap" rel="stylesheet">
 
 </head>
 <body>
         <div class="top-bar">
-            <a href="http://iroeimages.com/" class="logo"><img src="static/images/logo.png" width="120px"></a>
+            <a href="{% url 'webpage' %}" class="logo"><img src="{% static 'images/logo.png' %}" width="120px"></a>
 
             <div class="nav">
                 <h3 style="font-size:20px;">
-                    <a href="about" style="padding:10px;">About us</a>
+                    <a href="{% url 'about' %}" style="padding:10px;">About us</a>
                     <a href="#" style="padding:10px;">Service</a>
                 </h3>
             </div>
 
         </div>
         <div class="head-block">
-            <h3 style="font-size:2vw; text-align: center; color:white;" >Virtual Media Entertainment Company</h3>
+            <h3 style="font-size:2vw; color:white; padding-left:8vw" >We are Iroeimages</h3>
+            <h3 style="font-size:2vw; color:white; padding-left:8vw" >A Virtual Media Entertainment Company</h3>
+        </div>
+
+
+        <div class="block">
+            <h3 style="font-size:2vw; text-align: center;" >
+            Service
+            <div class="bar">
+                <div class="box">
+                    <div class="circle"><img src="{% static 'images/face.png' %}"></div>
+                    <h3 style="font-size:2vw;">
+                        Character Design
+                    </h3>
+                </div>
+                <div class="box">
+                    <div class="circle"><img src="{% static 'images/face.png' %}"></div>
+                    <h3 style="font-size:2vw;">
+                        Live2D Rigging
+                    </h3>
+                </div>
+            </div>
+            </h3>
         </div>
         <div class="block">
             <h3 style="font-size:2vw; text-align: center;" >
@@ -31,7 +54,7 @@
                 <br>
                 <div class="bar">
                 <div class="box">
-                    <div class="circle"><img src="static/images/face.png"></div>
+                    <div class="circle"><img src="{% static 'images/face.png' %}"></div>
                     <h3 style="font-size:2vw;">
                         ((Name))
                         <br>
@@ -39,7 +62,7 @@
                     </h3>
                 </div>
                 <div class="box">
-                    <div class="circle"><img src="static/images/face.png"></div>
+                    <div class="circle"><img src="{% static 'images/face.png' %}"></div>
                     <h3 style="font-size:2vw;">
                         ((Name))
                         <br>
@@ -47,7 +70,7 @@
                     </h3>
                 </div>
                 <div class="box">
-                    <div class="circle"><img src="static/images/face.png"></div>
+                    <div class="circle"><img src="{% static 'images/face.png' %}"></div>
                     <h3 style="font-size:2vw;">
                         ((Name))
                         <br>
@@ -56,7 +79,6 @@
                 </div>
             </div>
             </h3>
-
         </div>
     <div class="final-bar">
         <p> ⓒ2020 Iroeimages company</p>
