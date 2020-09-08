@@ -87,17 +87,17 @@ body
 
 }
 
-.h-left
+.head-text
+{
+    font-size: 3vw;
+}
+
+.h-rl
 {
     display: inline-block;
     flex: 1;
 }
 
-.h-right
-{
-    display: inline-block;
-    flex: 1;
-}
 
 .flexbox
 {
@@ -220,6 +220,5 @@ body
   bottom: 0;
   width: 100%;
   height: auto;
-  box-shadow: inset 100px 0px 30px 50px #FFF;
   z-index: -1;
 }
