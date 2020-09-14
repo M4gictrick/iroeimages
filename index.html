@@ -2,15 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
-    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href='static/css/style.css'>
     <script src="static/js/script.js" type="text/javascript" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=BioRhyme&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </head>
 <body onload="start()">
+  <nav class="navbar navbar-expand-md top-bar sticky-top">
+  <a class="navbar-brand" href="https://iroeimages.com/."><img src="static/images/logo.png" class="logo"></a>
+  <button class="navbar-toggler ml-auto custom-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#">about us</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+    <!--
         <div class="top-bar">
             <a href="https://iroeimages.com/." class="logo"><img src="static/images/logo.png" width="120px"></a>
 
@@ -21,6 +37,7 @@
             </div>
 
         </div>
+        --->
         <div class="head-block">
             <div class="flexbox">
                 <h3 class="text-line" >We are<br><p class="head-text">Iroeimages</p>Virtual Media Entertainment Company</h3>
@@ -32,30 +49,24 @@
             <div class="h-rl">
                 <div class="flexbox">
                     <h3 class="text-line">
-                        <p class="head-text">Character Design</p><br>
+                        <p class="head-text">Character Design</p>
                         Making a character <br>from scratch to live<br> with our talented artist!
                     </h3>
                 </div>
             </div>
             <div class="h-rl">
-                <video autoplay muted loop class="myVideo" id="vid1">
-                    <source src="static/video/draw.mp4" type="video/mp4">
-                </video>
-
-
+                <img src="static/images/draw.jpg" class="myVideo">
             </div>
 
         </div>
         <div class="head-block2">
             <div class="h-rl">
-                <video autoplay muted loop class="myVideo" id="vid2">
-                    <source src="static/video/2d.mp4" type="video/mp4">
-                </video>
+                <img src="static/images/live2d.png" class="myVideo">
             </div>
             <div class="h-rl">
                 <div class="flexbox">
                     <h3 class="text-line">
-                        <p class="head-text">Live2D rigging</p><br>
+                        <p class="head-text">Live2D rigging</p>
                     Once you have a character<br> we're ready to<br> bring them to live <br>with our creativities!
                 </h3>
                 </div>
